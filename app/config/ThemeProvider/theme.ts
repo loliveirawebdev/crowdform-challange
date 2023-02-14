@@ -8,5 +8,6 @@ export const APP_THEME: DefaultTheme = {
     white: "#FFFFFF",
     black: "#000000",
     gray: "#CFCFCF",
+    darkGray: "#A0A0A0",
   },
 };
