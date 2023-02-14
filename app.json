@@ -4,7 +4,7 @@
     "slug": "crowdform-challenge",
     "version": "1.0.0",
     "orientation": "portrait",
-    "entryPoint": "./app/index.js",
+    "entryPoint": "./app/index.tsx",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
