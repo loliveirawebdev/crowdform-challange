@@ -4,6 +4,7 @@
     "slug": "crowdform-challenge",
     "version": "1.0.0",
     "orientation": "portrait",
+    "entryPoint": "./app/index.js",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -14,9 +15,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
