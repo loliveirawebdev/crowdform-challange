@@ -1,0 +1,3 @@
+interface Icon {
+  color?: string;
+}
