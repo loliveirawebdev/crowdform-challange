@@ -16,7 +16,10 @@ export const TabNavigation: React.FC = () => {
   });
 
   return (
-    <Tab.Navigator screenOptions={tabNavigatorOptions}>
+    <Tab.Navigator
+      screenOptions={tabNavigatorOptions}
+      sceneContainerStyle={{ backgroundColor: APP_THEME.colors.white }}
+    >
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Trade" component={TradeScreen} />
       <Tab.Screen name="Portfolio" component={PortfolioScreen} />
