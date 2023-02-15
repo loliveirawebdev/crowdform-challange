@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 import styled from "styled-components/native";
 import { APP_THEME } from "../../config/ThemeProvider/theme";
+type LabelProps = { isActive: boolean; marker: Tabs["marker"] };
 
 export const TabsContainer = styled.View`
   position: relative;
@@ -13,22 +14,29 @@ export const Labels = styled.View`
   justify-content: space-between;
 `;
 
-type LabelProps = { active: boolean };
 export const Label = styled.Text<LabelProps>`
   padding: 14px 0;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  color: ${(p) => (p.active ? p.theme.colors.black : p.theme.colors.darkGray)};
+  color: ${(p) => (p.isActive ? p.theme.colors.primary : p.theme.colors.darkGray)};
 `;
 
 export const styles = StyleSheet.create({
-  activeMarker: {
-    width: 50,
+  borderMarker: {
     height: 2,
     bottom: 0,
-    borderRadius: 2,
+    borderRadius: 4,
     position: "absolute",
     backgroundColor: APP_THEME.colors.primary,
+  },
+
+  backgroundMarker: {
+    bottom: 0,
+    zIndex: -1,
+    height: "100%",
+    borderRadius: 4,
+    position: "absolute",
+    backgroundColor: APP_THEME.colors.secondary,
   },
 });

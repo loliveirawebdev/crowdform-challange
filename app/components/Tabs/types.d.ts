@@ -2,6 +2,7 @@ interface Tabs {
   labels: string[];
   activeIndex: number;
   children?: ReactNode;
+  marker?: "border" | "background";
   onChange?: ((index: number) => void) | undefined;
 }
 
