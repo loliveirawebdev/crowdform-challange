@@ -5,7 +5,7 @@ export const Container = styled.View`
   padding: 0 24px;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 `;
 
 export const Separator = styled.View`
@@ -15,8 +15,6 @@ export const Separator = styled.View`
 `;
 
 export const Slot = styled.View`
-  flex: 1;
-  width: 100%;
   height: 100%;
   justify-content: center;
 `;

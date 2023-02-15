@@ -14,9 +14,25 @@ export const Header: React.FC<Header> = (props) => {
     return items.concat(emptySlots);
   };
 
+  const getSlotAlignment = (k: number, items: any[]) => {
+    if (items.length <= 0) return "flex-start";
+    else if (k === items.length - 1) return "flex-end";
+    else if (k === 0) return "flex-start";
+    else return "center";
+  };
+
   const renderSlots = () => {
     const items = getNormalizedItems();
-    return items.map((item, k) => <Slot key={k}>{item}</Slot>);
+
+    return items.map((item, k) => {
+      const alignment = getSlotAlignment(k, items);
+
+      return (
+        <Slot style={{ alignItems: alignment }} key={k}>
+          {item}
+        </Slot>
+      );
+    });
   };
 
   return (
