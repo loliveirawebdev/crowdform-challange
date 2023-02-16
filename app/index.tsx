@@ -1,11 +1,14 @@
 import { registerRootComponent } from "expo";
-import { Text, View } from "react-native";
+import React from "react";
+import { Text } from "react-native";
+import { ThemeProvider } from "./config/ThemeProvider";
+import { AppNavigation } from "./features/AppNavigation";
 
 function App() {
   return (
-    <View>
-      <Text>Hello World Typescript</Text>
-    </View>
+    <ThemeProvider>
+      <AppNavigation />
+    </ThemeProvider>
   );
 }
 
