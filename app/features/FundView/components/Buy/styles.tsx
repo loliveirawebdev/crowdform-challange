@@ -21,8 +21,7 @@ export const InfoContainer = styled.View`
 `;
 
 export const TitleContainer = styled.View`
-  padding: 0 24px;
-  margin-bottom: 24px;
+  padding: 0 24px 24px 24px;
   flex-direction: row;
 `;
 
