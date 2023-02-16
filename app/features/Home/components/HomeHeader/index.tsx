@@ -5,10 +5,10 @@ import { UserIcon } from "../../../../assets/icons/UserIcon";
 import { Text, TouchableOpacity, View } from "react-native";
 import { APP_THEME } from "../../../../config/ThemeProvider/theme";
 import { ArrowUpIcon } from "../../../../assets/icons/ArrowUpIcon";
+import { Transition, Transitioning } from "react-native-reanimated";
 import { HeaderTitle, HeaderTitleContainer, styles } from "./styles";
 import { ArrowDownIcon } from "../../../../assets/icons/ArrowDownIcon";
 import { NotificationIcon } from "../../../../assets/icons/NotificationIcon";
-import { Transition, Transitioning } from "react-native-reanimated";
 import { ArrowUpRightIcon } from "../../../../assets/icons/ArrowUpRightIcon";
 
 export const HomeHeader: React.FC = () => {
