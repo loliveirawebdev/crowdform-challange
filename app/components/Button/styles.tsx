@@ -4,7 +4,7 @@ const BaseContainer = styled.Text<Button>`
   font-weight: bold;
   text-align: center;
   border-radius: 4px;
-  padding: ${(p) => (p.small ? 10 : 16)}px 0;
+  padding: ${(p) => (p.small ? 10 : 16)}px;
 `;
 
 /***************************************
