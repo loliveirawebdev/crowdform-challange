@@ -13,7 +13,7 @@ const INFO = [
 export const Stats: React.FC = () => {
   const renderInfo = (info: any) => {
     return (
-      <View style={styles.infoContainer}>
+      <View key={info.title} style={styles.infoContainer}>
         <Text style={styles.infoTitle}>{info.title}</Text>
         <Text style={styles.infoValue}>{info.value}</Text>
       </View>
