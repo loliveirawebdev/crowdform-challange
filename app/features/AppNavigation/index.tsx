@@ -1,4 +1,5 @@
 import { LoginScreen } from "../Login";
+import { FundViewScreen } from "../FundView";
 import { NewAccountScreen } from "../NewAccount";
 import { TabNavigation } from "../TabNavigation";
 import { NavigationContainer } from "@react-navigation/native";
@@ -11,6 +12,7 @@ export const AppNavigation: React.FC = () => {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="NewAccount" component={NewAccountScreen} />
+        <Stack.Screen name="FundView" component={FundViewScreen} options={{ animation: "fade" }} />
         <Stack.Screen name="Authenticated" component={TabNavigation} options={{ animation: "fade" }} />
       </Stack.Navigator>
     </NavigationContainer>
