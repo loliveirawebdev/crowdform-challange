@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Separator, Slot } from "./styles";
 
 export const Header: React.FC<Header> = (props) => {
-  const { items: itemsProp, slots: slotsProp } = props;
+  const { items: itemsProp, slots: slotsProp, append } = props;
   const items = Array.isArray(itemsProp) ? itemsProp : [itemsProp];
   const slots = slotsProp || items.length;
 
@@ -38,7 +38,7 @@ export const Header: React.FC<Header> = (props) => {
   return (
     <React.Fragment>
       <Container>{renderSlots()}</Container>
-
+      {append || null}
       <Separator />
     </React.Fragment>
   );
